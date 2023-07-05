@@ -1,16 +1,10 @@
 {
-  "name": "playwright-components",
-  "version": "0.4.2",
-  "description": "Set of page object components to help in complex playwright projects",
-  "keywords": [
-    "playwright",
-    "test",
-    "qa",
-    "automation"
-  ],
+  "name": "cucumber-playwright",
+  "version": "0.0.1",
+  "description": "> TODO: description",
   "author": "jdsmdev <jorge.soaresmoniz@hitachivantara.com>",
   "homepage": "https://github.com/jdsmdev/npm-packages#readme",
-  "license": "MIT",
+  "license": "ISC",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "directories": {
@@ -29,13 +23,21 @@
     "lint:types": "tsc --noEmit",
     "lint:eslint": "eslint --color --cache src",
     "lint:prettier": "prettier --check src",
-    "prepublish": "npm run build",
     "test": "jest --coverage"
   },
   "bugs": {
     "url": "https://github.com/jdsmdev/npm-packages/issues"
   },
   "dependencies": {
-    "playwright": "^1.33.0"
+    "@cucumber/cucumber": "^9.1.0",
+    "@cucumber/messages": "^22.0.0",
+    "@playwright/test": "^1.33.0",
+    "fs-extra": "^11.1.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/jest": "^29.5.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.0"
   }
 }
